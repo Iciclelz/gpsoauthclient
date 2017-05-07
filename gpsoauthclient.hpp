@@ -44,7 +44,7 @@ private:
 
 	std::string urlsafe_b64_encode(const std::vector<uint8_t> &signature);
 
-	std::unordered_map<std::string, std::string> perform_auth_request(std::unordered_map<std::string, std::string> &data);
+	std::unordered_map<std::string, std::string> perform_auth_request(const std::unordered_map<std::string, std::string> &data);
 	
 };
 
