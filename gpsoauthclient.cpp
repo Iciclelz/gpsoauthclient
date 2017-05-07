@@ -270,7 +270,7 @@ size_t curl_writefunction(void * pointer, size_t size, size_t n, std::string * s
 	return new_size;
 }
 
-std::unordered_map<std::string, std::string> gpsoauthclient::perform_auth_request(std::unordered_map<std::string, std::string> &data)
+std::unordered_map<std::string, std::string> gpsoauthclient::perform_auth_request(const std::unordered_map<std::string, std::string> &data)
 {
 	curl_global_init(CURL_GLOBAL_ALL);
 	
